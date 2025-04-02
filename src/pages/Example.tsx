@@ -3,7 +3,7 @@ import { IonButton, IonContent, IonHeader, IonPage, IonInput, IonTitle, IonToolb
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
 
-const Home: React.FC = () => {
+const Example: React.FC = () => {
   const [input, setInput] = useState<string>('')
 
   useEffect(() =>{
@@ -16,18 +16,15 @@ const Home: React.FC = () => {
 
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Best App Ever</IonTitle>
+          <IonTitle>Example</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className='ion-padding'>
-      <IonButton routerLink="/login">Login</IonButton>
-      <IonButton routerLink="/register" color="secondary">Register</IonButton>
-
       <IonInput value={input} 
       onIonChange={(e: any) => setInput(e.target.value)}></IonInput>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Firebase</IonTitle>
+            <IonTitle size="large">Firebase Example</IonTitle>
           </IonToolbar>
         </IonHeader>
         <ExploreContainer />
@@ -37,4 +34,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Example;
